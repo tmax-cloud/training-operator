@@ -82,7 +82,7 @@ func main() {
 		config.MPIKubectlDeliveryImageDefault, "The image for mpi launcher init container")
 
 	opts := zap.Options{
-		Development:     true,
+		Development:     false,
 		StacktraceLevel: zapcore.DPanicLevel,
 	}
 	opts.BindFlags(flag.CommandLine)
